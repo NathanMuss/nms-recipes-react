@@ -5,6 +5,7 @@ import RefinedResult from './RefinedResult';
 
 const Results = (props) => {
     const results = handleResults(props.data);
+    // Add results filter by combine type
     return (
         <main className="row">
             {results}

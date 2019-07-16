@@ -1,26 +1,13 @@
 .result-container {
     margin-top: 20px;
-    border: 1px solid rgba(207,207,207,1);
+    border: 2px solid black;
     border-radius: 8px;
     -webkit-box-shadow: 6px 6px 10px 0px rgba(207,207,207,1);
     -moz-box-shadow: 6px 6px 10px 0px rgba(207,207,207,1);
     box-shadow: 6px 6px 10px 0px rgba(207,207,207,1);
 
 }
-
-.result-main {
-    margin-top: 20px;
-}
-
-.result-main > img {
-    border-radius: 8px;
-}
-
 .result-recipes {
-    border-top: solid 1px rgba(207,207,207,1);
-}
-
-.result-used-in {
     border-top: solid 1px rgba(207,207,207,1);
 }
 
