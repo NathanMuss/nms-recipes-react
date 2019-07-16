@@ -41,7 +41,7 @@ function processIngredients(item) {
     const ingredients = ingredientList.map((item, i) => {
         return (
             // 12 columns divided by number of ingredients for column size
-            <div key={i} className={`col s${Math.floor(12/ingredientList.length)}`} >
+            <div key={i} className={`col s${Math.floor(12/ingredientList.length)}`}>
                 <Ingredient item={item} />
             </div>
         )

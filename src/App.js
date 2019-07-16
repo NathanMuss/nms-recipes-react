@@ -41,7 +41,6 @@ class App extends Component {
             </div>
           )
         }}/>
-        {/* TODO: Add footer */}
         <Footer />
       </Router>
     );
