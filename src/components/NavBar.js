@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getCraftedResults, getPortableResults, getMediumResults, getLargeResults } from '../utils/searchUtil';
+import { getAllResults } from '../utils/searchUtil';
 
 
 export default class NavBar extends Component {
@@ -11,15 +11,11 @@ export default class NavBar extends Component {
     }
 
     handleSearch(query, e) {
+        getAllResults(query);
         if (e) {
             e.preventDefault();
         }
-        const results = {
-            crafted: getCraftedResults(query),
-            portable: getPortableResults(query),
-            medium: getMediumResults(query),
-            large: getLargeResults(query)
-        }
+        const results = getAllResults(query);
         this.props.updateResults(results);
     }
 
