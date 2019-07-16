@@ -1,5 +1,5 @@
 {
-    "one": [
+    "portable": [
       {
         "name": "Extreme Polishing",
         "time": "1:00",
@@ -540,7 +540,7 @@
         "imgResult": "platinum"
       }
     ],
-    "two": [
+    "medium": [
       {
         "name": "Alchemical Construction",
         "time": "1:00",
@@ -2024,7 +2024,7 @@
         "result": "Coprite x1"
       }
     ],
-    "three": [
+    "large": [
       {
         "name": "Rare Metal Fusion",
         "time": "2:00",
@@ -3250,9 +3250,9 @@
         "result": "Nitrogen Salt x1"
       }
     ],
-    "crafting": [
+    "crafted": [
       {
-        "time": "18,000,000",
+        "value": "18,000,000",
         "imgOne": "quantum-processor",
         "ingredientOne": "Quantum Processor",
         "imgTwo": "cryogenic-chamber",
@@ -3264,7 +3264,7 @@
         "sub": "Circuit Board Superconductor Living Glass Cryo-Pump Aronium Magno-Gold Grantine Heat Capacitor Poly Fiber Enriched Carbon Semiconductor Thermic Condensate Nitrogen Salt Lubricant Hot Ice Frost Crystal Solanium Cactus Flesh Star Bulb Radon Condensed Carbon Sulphurine Coprite Gamma Roots Phosphorus Dioxite"
       },
       {
-        "time": "5,400,000",
+        "value": "5,400,000",
         "imgOne": "circuit-board",
         "ingredientOne": "Circuit Board",
         "imgTwo": "superconductor",
@@ -3274,7 +3274,7 @@
         "sub": "Heat Capacitor Poly Fiber Enriched Carbon Semiconductor Thermic Condensate Nitrogen Salt  Frost Crystal Solanium Cactus Flesh Star Bulb Radon Condensed Carbon Sulphurine"
       },
       {
-        "time": "4,800,000",
+        "value": "4,800,000",
         "imgOne": "living-glass",
         "ingredientOne": "Living Glass",
         "imgTwo": "cryo-pump",
@@ -3284,7 +3284,7 @@
         "sub": "Enriched Carbon  Thermic Condensate Nitrogen Salt Lubricant Hot Ice Frost Crystal   Radon Condensed Carbon Sulphurine Coprite Gamma Roots"
       },
       {
-        "time": "150,000",
+        "value": "150,000",
         "imgOne": "aronium",
         "ingredientOne": "Aronium",
         "imgTwo": "magno-gold",
@@ -3296,7 +3296,7 @@
         "sub": "Aronium Magno-Gold Grantine Paraffinium Ionised Cobalt Phosphorus Dioxite"
       },
       {
-        "time": "1,196,250",
+        "value": "1,196,250",
         "imgOne": "poly-fiber",
         "ingredientOne": "Poly Fiber",
         "imgTwo": "heat-capacitor",
@@ -3306,7 +3306,7 @@
         "sub": "Frost Crystal Solanium Cactus Flesh Star Bulb"
       },
       {
-        "time": "4,000,000",
+        "value": "4,000,000",
         "imgOne": "semiconductor",
         "ingredientOne": "Semiconductor",
         "imgTwo": "enriched-carbon",
@@ -3316,7 +3316,7 @@
         "sub": "Enriched Carbon Semiconductor Thermic Condensate Nitrogen Salt Radon Condensed Carbon Sulphurine"
       },
       {
-        "time": "130,000",
+        "value": "130,000",
         "imgOne": "cactus-flesh",
         "ingredientOne": "Cactus Flesh x100",
         "imgTwo": "star-bulb",
@@ -3326,7 +3326,7 @@
         "sub": ""
       },
       {
-        "time": "240,000",
+        "value": "240,000",
         "imgOne": "solanium",
         "ingredientOne": "Solanium x100",
         "imgTwo": "frost-crystal",
@@ -3336,7 +3336,7 @@
         "sub": ""
       },
       {
-        "time": "50,000",
+        "value": "50,000",
         "imgOne": "condensed-carbon",
         "ingredientOne": "Condensed Carbon x50",
         "imgTwo": "radon",
@@ -3346,7 +3346,7 @@
         "sub": ""
       },
       {
-        "time": "1,600,000",
+        "value": "1,600,000",
         "imgOne": "nitrogen-salt",
         "ingredientOne": "Nitrogen Salt",
         "imgTwo": "thermic-condensate",
@@ -3356,7 +3356,7 @@
         "sub": "Radon Condensed Carbon Sulphurine"
       },
       {
-        "time": "50,000",
+        "value": "50,000",
         "imgOne": "condensed-carbon",
         "ingredientOne": "Condensed Carbon x50",
         "imgTwo": "sulphurine",
@@ -3366,7 +3366,7 @@
         "sub": ""
       },
       {
-        "time": "250,000",
+        "value": "250,000",
         "imgOne": "condensed-carbon",
         "ingredientOne": "Condensed Carbon x50",
         "imgTwo": "radon",
@@ -3376,7 +3376,7 @@
         "sub": ""
       },
       {
-        "time": "696,000",
+        "value": "696,000",
         "imgOne": "glass",
         "ingredientOne": "Glass x5",
         "imgTwo": "lubricant",
@@ -3386,7 +3386,7 @@
         "sub": "Coprite Gamma Roots"
       },
       {
-        "time": "36,000",
+        "value": "36,000",
         "imgOne": "frost-crystal",
         "ingredientOne": "Frost Crystal x250",
         "imgResult": "glass",
@@ -3394,7 +3394,7 @@
         "sub": ""
       },
       {
-        "time": "160,000",
+        "value": "160,000",
         "imgOne": "coprite",
         "ingredientOne": "Coprite x50",
         "imgTwo": "gamma-root",
@@ -3404,7 +3404,7 @@
         "sub": ""
       },
       {
-        "time": "4,000,000",
+        "value": "4,000,000",
         "imgOne": "thermic-condensate",
         "ingredientOne": "Thermic Condensate",
         "imgTwo": "hot-ice",
@@ -3414,7 +3414,7 @@
         "sub": "Enriched Carbon Nitrogen Salt   Radon Condensed Carbon Sulphurine"
       },
       {
-        "time": "25,000",
+        "value": "25,000",
         "imgOne": "ionised-cobalt",
         "ingredientOne": "Ionised Cobalt x50",
         "imgTwo": "paraffinium",
@@ -3424,7 +3424,7 @@
         "sub": ""
       },
       {
-        "time": "150,000",
+        "value": "150,000",
         "imgOne": "ionised-cobalt",
         "ingredientOne": "Ionised Cobalt x50",
         "imgTwo": "phosphorus",
@@ -3434,7 +3434,7 @@
         "sub": ""
       },
       {
-        "time": "150,000",
+        "value": "150,000",
         "imgOne": "ionised-cobalt",
         "ingredientOne": "Ionised Cobalt x50",
         "imgTwo": "dioxite",
@@ -3444,7 +3444,7 @@
         "sub": ""
       },
       {
-        "time": "18,000,000",
+        "value": "18,000,000",
         "imgOne": "quantum-processor",
         "ingredientOne": "Quantum Processor",
         "imgTwo": "portable-reactor",
@@ -3456,7 +3456,7 @@
         "sub": "Circuit Board Superconductor Liquid Explosives Fusion Accelerant Dirty Bronze Herox Lemmium Poly Fibre Heat Capacitor Enriched Carbon Semiconductor Acid Unstable Gel Organic Catalyst Nitrogen Salt Thermic Condensate Cactus Flesh Star Bulb Frost Crystal Solanium Radon Condensed Carbon Sulpurine Mordite Fungal Mould Pyrite Pure Ferrite Ammonia Ionised Cobalt Uranium"
       },
       {
-        "time": "5,000,000",
+        "value": "5,000,000",
         "imgOne": "liquid-explosive",
         "ingredientOne": "Liquid Explosives",
         "imgTwo": "fusion-accelerant",
@@ -3466,7 +3466,7 @@
         "sub": "Enriched Carbon Acid Unstable Gel Organic Catalyst Nitrogen Salt Thermic Condensate Cactus Flesh Radon Condensed Carbon Mordite Fungal Mould Sulpurine"
       },
       {
-        "time": "1,000,500",
+        "value": "1,000,500",
         "imgOne": "acid",
         "ingredientOne": "Acid",
         "imgTwo": "unstable-gel",
@@ -3476,7 +3476,7 @@
         "sub": "Cactus Flesh Mordite Fungal Mould"
       },
       {
-        "time": "288,000",
+        "value": "288,000",
         "imgOne": "mordite",
         "ingredientOne": "Mordite x25",
         "imgTwo": "fungal-mould",
@@ -3486,7 +3486,7 @@
         "sub": ""
       },
       {
-        "time": "80,000",
+        "value": "80,000",
         "imgOne": "cactus-flesh",
         "ingredientOne": "Cactus Flesh x200",
         "imgResult": "unstable-gel",
@@ -3494,7 +3494,7 @@
         "sub": ""
       },
       {
-        "time": "2,000,000",
+        "value": "2,000,000",
         "imgOne": "organic-catalyst",
         "ingredientOne": "Organic Catalyst",
         "imgTwo": "nitrogen-salt",
@@ -3504,7 +3504,7 @@
         "sub": "Enriched Carbon Thermic Condensate  Radon Nitrogen Sulpurine Condensed Carbon "
       },
       {
-        "time": "0",
+        "value": "0",
         "imgOne": "thermic-condensate",
         "ingredientOne": "Thermic Condensate",
         "imgTwo": "enriched-carbon",
@@ -3514,7 +3514,7 @@
         "sub": " Radon Nitrogen Sulpurine Condensed Carbon "
       },
       {
-        "time": "150,000",
+        "value": "150,000",
         "imgOne": "dirty-bronze",
         "ingredientOne": "Dirty Bronze",
         "imgTwo": "herox",
@@ -3526,7 +3526,7 @@
         "sub": "Pyrite Pure Ferrite Ammonia Ionised Cobalt Uranium"
       },
       {
-        "time": "25,000",
+        "value": "25,000",
         "imgOne": "pyrite",
         "ingredientOne": "Pyrite",
         "imgTwo": "pure-ferrite",
@@ -3536,7 +3536,7 @@
         "sub": ""
       },
       {
-        "time": "25,000",
+        "value": "25,000",
         "imgOne": "ammonia",
         "ingredientOne": "Ammonia",
         "imgTwo": "ionised-cobalt",
@@ -3546,7 +3546,7 @@
         "sub": ""
       },
       {
-        "time": "25,000",
+        "value": "25,000",
         "imgOne": "uranium",
         "ingredientOne": "Uranium",
         "imgTwo": "pure-ferrite",

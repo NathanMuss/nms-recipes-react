@@ -1,23 +1,25 @@
 import React from 'react';
 import Ingredient from './Ingredient';
 
-const CraftedResult = (props) => {
+const RefinedResult = (props) => {
     const ingredients = processIngredients(props.item);
-
+    
     return (
         <div className="result-container container center">
-            <div className="result-main">
+              <div className="result-main">
                 <div className="result-details">
                     <h2>{props.item.result}</h2>
                     <img src={`/images/${props.item.imgResult}.png`} alt={props.item.result}/>
-                    <p>Value: {props.item.value}</p>
+                    <p>Process name: {props.item.name}</p>
+                    <p>Time to process: {props.item.time}</p>
                 </div>
                 <div className="result-recipes row">
                     <h3>Ingredients</h3>
                     {ingredients}
                 </div>
             </div>
-        </div>  
+        </div>
+
     );
 }
 
@@ -50,4 +52,4 @@ function processIngredients(item) {
     return ingredients;
 }
 
-export default CraftedResult;
+export default RefinedResult;

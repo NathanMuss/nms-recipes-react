@@ -23,3 +23,8 @@
 .result-used-in {
     border-top: solid 1px rgba(207,207,207,1);
 }
+
+img {
+    height: 100px;
+    width: 100px
+}
