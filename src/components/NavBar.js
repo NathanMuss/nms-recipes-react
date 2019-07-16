@@ -11,7 +11,7 @@ export default class NavBar extends Component {
     }
 
     handleSearch(query, e) {
-        //TODO: Update URL
+        this.props.history.push(`/${query.toLowerCase()}`)
         getAllResults(query);
         if (e) {
             e.preventDefault();
