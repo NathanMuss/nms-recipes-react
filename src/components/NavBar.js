@@ -11,6 +11,7 @@ export default class NavBar extends Component {
     }
 
     handleSearch(query, e) {
+        //TODO: Update URL
         getAllResults(query);
         if (e) {
             e.preventDefault();
@@ -20,6 +21,7 @@ export default class NavBar extends Component {
     }
 
     updateQuery(newQuery) {
+        //TODO: add typeahead
         this.setState({
             query: newQuery
         })

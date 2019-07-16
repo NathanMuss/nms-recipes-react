@@ -3,7 +3,6 @@ import Ingredient from './Ingredient';
 
 const CraftedResult = (props) => {
     const ingredients = processIngredients(props.item);
-
     return (
         <div className="result-container container center">
             <div className="result-main">
