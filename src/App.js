@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Results from './components/Results';
+import Footer from './components/Footer';
 import data from './data/items.json';
 
 
@@ -40,6 +41,8 @@ class App extends Component {
             </div>
           )
         }}/>
+        {/* TODO: Add footer */}
+        <Footer />
       </Router>
     );
   }

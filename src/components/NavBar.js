@@ -34,8 +34,9 @@ export default class NavBar extends Component {
         }
     }
     render() {
+        // TODO:  Add options for individual search types e.g. Portable Refiner only, Crafted only etc
         return (
-            <div>
+            <header>
                 <div className="navbar-fixed ">
                     <nav className="white">
                         <div className="nav-wrapper">
@@ -50,7 +51,7 @@ export default class NavBar extends Component {
                         </div>
                     </nav>
                 </div>
-            </div>
+            </header>
         );
     }
 }

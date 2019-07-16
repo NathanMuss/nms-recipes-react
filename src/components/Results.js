@@ -6,9 +6,9 @@ import RefinedResult from './RefinedResult';
 const Results = (props) => {
     const results = handleResults(props.data);
     return (
-        <div className="row">
-                {results}
-            </div>
+        <main className="row">
+            {results}
+        </main>
     );
 }
 

@@ -1,6 +1,14 @@
 # Crafting and Refiner recipes for No Man's Sky Next
 
-## Available Scripts
+Check out the app at https://nomansrecipes.herokuapp.com
+
+If you have suggestions for the app feel free to shoot me an email at nomansrecipes@gmail.com
+
+
+Special thanks to [bradhave94](https://github.com/bradhave94) for having images and recipes on github!
+
+
+## To run locally
 
 In the project directory, you can run:
 

@@ -1,0 +1,16 @@
+footer {
+    
+    width: 100vw;
+    height: 25px;
+  }
+  .page-footer {
+    margin-bottom: 0;
+    position:fixed;
+    bottom: 0;
+    padding: 0;
+    color: darkslategray;
+    background-color: lightgray
+  }
+  .footer-text-container {
+      margin-right: 5vw
+  }
