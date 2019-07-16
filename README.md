@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Crafting and Refiner recipes for No Man's Sky Next
 
 ## Available Scripts
 

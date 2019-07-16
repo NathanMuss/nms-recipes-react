@@ -1,44 +1,48 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Results from './components/Results';
 import data from './data/items.json';
 
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      result: ""
+      result: data.crafting
     }
   }
-  handleSearch = (e, query) => {
-    e.preventDefault();
-    const result = {
-      craftedResults: getCraftedResults(query)
-    }
-    console.log(result);
-    
+
+  updateResults = (results) => {
     this.setState({
-      result
+      result: results
     })
   }
 
   render() {
     return (
-      <div className="App">
-          <NavBar handleSearch={this.handleSearch}/>
-          <Results data={this.state.result}/>
-      </div>
+      <Router>
+      {/* TODO: Find a way to clean this up, don't like repeating */}
+        <Route path="/" exact render={(props) => {
+          return (
+            <div className="App">
+              <NavBar {...props} updateResults={results => this.updateResults(results)}/>
+              <Results data={this.state.result} />
+            </div>
+          )
+        }} />
+        <Route path="/:query" render={(props) => {
+          return (
+            <div className="App">
+              <NavBar {...props} updateResults={results => this.updateResults(results)}/>
+              <Results data={this.state.result} />
+            </div>
+          )
+        }}/>
+      </Router>
     );
   }
-}
-
-function getCraftedResults(query) {
-  const crafted = data.crafting;
-  const results = crafted.filter((item) => {
-    return item.result.toLowerCase().includes(query.toLowerCase());
-  });
-  return results;
 }
 
 export default App;
