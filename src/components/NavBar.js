@@ -36,13 +36,13 @@ export default class NavBar extends Component {
     render() {
         // TODO:  Add options for individual search types e.g. Portable Refiner only, Crafted only etc
         return (
-            <header>
+            <div>
                 <div className="navbar-fixed ">
                     <nav className="white">
                         <div className="nav-wrapper">
-                            <div className="brand-logo red-text">No Man's Recipes</div>
+                            <div className="brand-logo red-text left">NMR</div>
                             <div className="row center">
-                                <div className="col offset-s3 s6">
+                                <div className="col offset-s2 s9 offset-m2 m8">
                                     <form onSubmit={(e) => this.handleSearch(document.getElementById("query").value, e)}>
                                         <input onChange={() => {this.updateQuery(document.getElementById("query").value)}} type="text" placeholder="Condensed Carbon" className="center" id="query" value={this.state.query} />
                                     </form>
@@ -51,7 +51,7 @@ export default class NavBar extends Component {
                         </div>
                     </nav>
                 </div>
-            </header>
+            </div>
         );
     }
 }
