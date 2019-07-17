@@ -28,6 +28,11 @@ function handleResults(data) {
 }
 
 function buildRefinedResults(data, arr) {
+    arr.push(
+        <div className="center section-divider">
+            <h3>Portable Refiner Recipes</h3>
+        </div>
+        )
       if (data.portable && data.portable.length) {
         const portableResults = data.portable.map((curr, i) => {
             return (
@@ -38,6 +43,11 @@ function buildRefinedResults(data, arr) {
     }
 
     if (data.medium && data.medium.length) {
+        arr.push(
+            <div className="center section-divider">
+                <h3>Medium Refiner Recipes</h3>
+            </div>
+        )
         const mediumResults = data.medium.map((curr, i) => {
             return (
                 <RefinedResult item={curr} key={i} />
@@ -47,6 +57,11 @@ function buildRefinedResults(data, arr) {
     }
 
       if (data.large && data.large.length) {
+          arr.push(
+              <div className="center section-divider">
+                <h3>Large Refiner Recipes</h3>
+              </div>
+        )
         const largeResults = data.large.map((curr, i) => {
             return (
                 <RefinedResult item={curr} key={i} />
@@ -56,6 +71,11 @@ function buildRefinedResults(data, arr) {
     }
 }
 function buildCraftedResults(data, arr) {
+    arr.push(
+        <div className="center section-divider">
+            <h3>Crafted Recipes</h3>
+        </div>
+        )
         if (data.crafted && data.crafted.length) {
         const craftedResults = data.crafted.map((curr, i) => {
             return (
