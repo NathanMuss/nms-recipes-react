@@ -74,17 +74,12 @@ function buildRefinedResults(data, arr) {
     }
 }
 function buildCraftedResults(data, arr) {
-    arr.push(
-        <div className="center section-divider">
-            <h3>Crafted Recipes</h3>
-        </div>
+    if (data.crafted && data.crafted.length) {
+        arr.push(
+            <div key="crafted-banner" className="center section-divider">
+                <h3>Crafting Recipes</h3>
+            </div>
         )
-        if (data.crafted && data.crafted.length) {
-            arr.push(
-                <div key="crafted-banner" className="center section-divider">
-                    <h3>Crafting Recipes</h3>
-                </div>
-            )
         const craftedResults = data.crafted.map((curr, i) => {
             return (
                 <CraftedResult item={curr} key={i} />
