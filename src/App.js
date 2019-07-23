@@ -4,23 +4,8 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Results from './components/Results';
 import Footer from './components/Footer';
-import data from './data/items.json';
-
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      result: data
-    }
-  }
-
-  updateResults = (results) => {
-    this.setState({
-      result: results
-    })
-  }
-
   render() {
     return (
       <Router>
@@ -28,16 +13,16 @@ class App extends Component {
         <Route path="/" exact render={(props) => {
           return (
             <div className="App">
-              <NavBar {...props} updateResults={results => this.updateResults(results)}/>
-              <Results data={this.state.result} />
+              <NavBar {...props} />
+              <Results />
             </div>
           )
         }} />
         <Route path="/:query" render={(props) => {
           return (
             <div className="App">
-              <NavBar {...props} updateResults={results => this.updateResults(results)}/>
-              <Results data={this.state.result} />
+              <NavBar {...props} />
+              <Results />
             </div>
           )
         }}/>

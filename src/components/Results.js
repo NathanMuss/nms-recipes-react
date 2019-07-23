@@ -2,6 +2,9 @@ import React from 'react';
 import './Results.css';
 import CraftedResult from './CraftedResult';
 import RefinedResult from './RefinedResult';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+
 
 const Results = (props) => {
     const results = handleResults(props.data);
@@ -28,6 +31,12 @@ function handleResults(data) {
 }
 
 function buildRefinedResults(data, arr) {
+    arr.push(
+            <div key="portable-refiner-banner" className="center section-divider">
+                <h3>Portable Refiner Recipes</h3>
+            </div>
+        )
+    
       if (data.portable && data.portable.length) {
         const portableResults = data.portable.map((curr, i) => {
             return (
@@ -38,6 +47,11 @@ function buildRefinedResults(data, arr) {
     }
 
     if (data.medium && data.medium.length) {
+        arr.push(
+            <div key="medium-refiner-banner" className="center section-divider">
+                <h3>Medium Refiner Recipes</h3>
+            </div>
+        )
         const mediumResults = data.medium.map((curr, i) => {
             return (
                 <RefinedResult item={curr} key={i} />
@@ -47,6 +61,11 @@ function buildRefinedResults(data, arr) {
     }
 
       if (data.large && data.large.length) {
+        arr.push(
+            <div key="large-refiner-banner" className="center section-divider">
+                <h3>Large Refiner Recipes</h3>
+            </div>
+        )
         const largeResults = data.large.map((curr, i) => {
             return (
                 <RefinedResult item={curr} key={i} />
@@ -57,6 +76,11 @@ function buildRefinedResults(data, arr) {
 }
 function buildCraftedResults(data, arr) {
         if (data.crafted && data.crafted.length) {
+            arr.push(
+                <div key="crafted-banner" className="center section-divider">
+                    <h3>Crafting Recipes</h3>
+                </div>
+            )
         const craftedResults = data.crafted.map((curr, i) => {
             return (
                 <CraftedResult item={curr} key={i} />
@@ -66,4 +90,11 @@ function buildCraftedResults(data, arr) {
     }
 }
 
-export default Results;
+function mapStateToProps(state) {
+    return {
+        query: state.query,
+        data: state.results
+    }
+}
+
+export default connect(mapStateToProps)(Results);

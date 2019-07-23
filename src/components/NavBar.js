@@ -1,35 +1,23 @@
 import React, { Component } from 'react';
 import { getAllResults } from '../utils/searchUtil';
+import updateQuery from '../actions/updateQuery';
+import updateResults from '../actions/updateResults';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 
-export default class NavBar extends Component {
-    constructor(props) {
-        super();
-        this.state = {
-            query: ""
-        }
-    }
-
+class NavBar extends Component {
     handleSearch(query, e) {
         this.props.history.push(`/${query.toLowerCase()}`)
         if (e) {
             e.preventDefault();
         }
-        const results = getAllResults(query);
-        this.props.updateResults(results);
+        this.props.updateResults(query);
     }
-
-    updateQuery(newQuery) {
-        //TODO: add typeahead
-        this.setState({
-            query: newQuery
-        })
-    }
-
     componentDidMount() {
         if (this.props.match.params.query) {
-            this.handleSearch(this.props.match.params.query);
-            this.updateQuery(this.props.match.params.query);
+            this.props.updateQuery(this.props.match.params.query);
+            this.props.updateResults(this.props.match.params.query);
         }
     }
     render() {
@@ -43,7 +31,7 @@ export default class NavBar extends Component {
                             <div className="row center">
                                 <div className="col offset-s2 s9 offset-m2 m8">
                                     <form onSubmit={(e) => this.handleSearch(document.getElementById("query").value, e)}>
-                                        <input onChange={() => {this.updateQuery(document.getElementById("query").value)}} type="text" placeholder="Condensed Carbon" className="center" id="query" value={this.state.query} />
+                                        <input onChange={() => {this.props.updateQuery(document.getElementById("query").value)}} type="text" placeholder="Condensed Carbon" className="center" id="query" value={this.props.query} />
                                     </form>
                                 </div>
                             </div>
@@ -54,3 +42,18 @@ export default class NavBar extends Component {
         );
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        query: state.query
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({
+        updateQuery: updateQuery,
+        updateResults: updateResults
+    }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
