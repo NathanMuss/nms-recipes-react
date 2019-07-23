@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { getAllResults } from '../utils/searchUtil';
 import updateQuery from '../actions/updateQuery';
 import updateResults from '../actions/updateResults';
 import { connect } from 'react-redux';
@@ -18,6 +17,8 @@ class NavBar extends Component {
         if (this.props.match.params.query) {
             this.props.updateQuery(this.props.match.params.query);
             this.props.updateResults(this.props.match.params.query);
+        } else {
+            this.props.updateResults();
         }
     }
     render() {

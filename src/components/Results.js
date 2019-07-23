@@ -3,7 +3,6 @@ import './Results.css';
 import CraftedResult from './CraftedResult';
 import RefinedResult from './RefinedResult';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 
 const Results = (props) => {

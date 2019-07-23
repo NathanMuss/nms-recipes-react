@@ -26,13 +26,17 @@ import data from '../data/items.json';
 // }
 
 export function getAllResults(query) {
-  const keys = Object.keys(data);
-  const result = {};
-  for (let key in keys) {
-    let current = data[keys[key]];
-    result[keys[key]] = current.filter((item) => {
-      return item.result.toLowerCase().includes(query.toLowerCase());
-    });
+  if (query) {
+    const keys = Object.keys(data);
+    const results = {};
+    for (let key in keys) {
+      let current = data[keys[key]];
+      results[keys[key]] = current.filter((item) => {
+        return item.result.toLowerCase().includes(query.toLowerCase());
+      });
+    }
+    return results;
+  } else {
+    return data;
   }
-  return result;
 }
