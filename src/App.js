@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Results from './components/Results';
 import Footer from './components/Footer';
+import Filter from './components/Filter';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           return (
             <div className="App">
               <NavBar {...props} />
+              <Filter />
               <Results />
             </div>
           )
@@ -22,6 +24,7 @@ class App extends Component {
           return (
             <div className="App">
               <NavBar {...props} />
+              <Filter />
               <Results />
             </div>
           )

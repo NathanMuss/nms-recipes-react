@@ -22,15 +22,14 @@ class NavBar extends Component {
         }
     }
     render() {
-        // TODO:  Add options for individual search types e.g. Portable Refiner only, Crafted only etc
         return (
             <div>
                 <div className="navbar-fixed ">
                     <nav className="white">
                         <div className="nav-wrapper">
-                            <div className="brand-logo red-text left">NMR</div>
+                            <div className="brand-logo blue-text darken-3 left">NMR</div>
                             <div className="row center">
-                                <div className="col offset-s2 s9 offset-m2 m8">
+                                <div className="col offset-s3 s6 offset-m3 m6">
                                     <form onSubmit={(e) => this.handleSearch(document.getElementById("query").value, e)}>
                                         <input onChange={() => {this.props.updateQuery(document.getElementById("query").value)}} type="text" placeholder="Condensed Carbon" className="center" id="query" value={this.props.query} />
                                     </form>

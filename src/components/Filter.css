@@ -1,0 +1,9 @@
+.type-label {
+    margin: 0px;
+}
+.switch-container {
+    display: flex;
+}
+.switch {
+    text-transform: capitalize;
+}

@@ -7,9 +7,8 @@ import { connect } from 'react-redux';
 
 const Results = (props) => {
     const results = handleResults(props.data);
-    // Add results filter by combine type
     return (
-        <main className="row">
+        <main className="row result-container">
             {results}
         </main>
     );
@@ -30,12 +29,12 @@ function handleResults(data) {
 }
 
 function buildRefinedResults(data, arr) {
-    arr.push(
-            <div key="portable-refiner-banner" className="center section-divider">
-                <h3>Portable Refiner Recipes</h3>
-            </div>
-        )
       if (data.portable && data.portable.length) {
+        arr.push(
+                <div key="portable-refiner-banner" className="center container section-divider">
+                    <h3>Portable Refiner Recipes</h3>
+                </div>
+            )
         const portableResults = data.portable.map((curr, i) => {
             return (
                 <RefinedResult item={curr} key={i} />
@@ -46,7 +45,7 @@ function buildRefinedResults(data, arr) {
 
     if (data.medium && data.medium.length) {
         arr.push(
-            <div key="medium-refiner-banner" className="center section-divider">
+            <div key="medium-refiner-banner" className="center container section-divider">
                 <h3>Medium Refiner Recipes</h3>
             </div>
         )
@@ -60,7 +59,7 @@ function buildRefinedResults(data, arr) {
 
       if (data.large && data.large.length) {
         arr.push(
-            <div key="large-refiner-banner" className="center section-divider">
+            <div key="large-refiner-banner" className="center container section-divider">
                 <h3>Large Refiner Recipes</h3>
             </div>
         )
@@ -75,7 +74,7 @@ function buildRefinedResults(data, arr) {
 function buildCraftedResults(data, arr) {
     if (data.crafted && data.crafted.length) {
         arr.push(
-            <div key="crafted-banner" className="center section-divider">
+            <div key="crafted-banner" className="center container section-divider">
                 <h3>Crafting Recipes</h3>
             </div>
         )
