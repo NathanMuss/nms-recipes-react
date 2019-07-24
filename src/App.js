@@ -10,17 +10,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-      {/* TODO: Find a way to clean this up, don't like repeating */}
-        <Route path="/" exact render={(props) => {
-          return (
-            <div className="App">
-              <NavBar {...props} />
-              <Filter />
-              <Results />
-            </div>
-          )
-        }} />
-        <Route path="/:query" render={(props) => {
+        <Route path="/:query?" render={(props) => {
           return (
             <div className="App">
               <NavBar {...props} />
