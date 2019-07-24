@@ -7,7 +7,7 @@ const CraftedResult = (props) => {
         <div className="result-container container center">
             <div className="result-main">
                 <div className="result-details">
-                    <h2>{props.item.result}</h2>
+                    <h2>{props.item.result} {props.item.resultCount ? "x" + props.item.resultCount : ""}</h2>
                     <img src={`/images/${props.item.imgResult}.png`} alt={props.item.result}/>
                     <p>Value: {props.item.value}</p>
                 </div>
@@ -24,17 +24,20 @@ function processIngredients(item) {
     const ingredientList = [];
     ingredientList.push({
         ingredient: item.ingredientOne,
+        ingredientCount: item.ingredientOneCount,
         image: `/images/${item.imgOne}.png`
     });   
     if (item.ingredientTwo) {
         ingredientList.push({
             ingredient: item.ingredientTwo,
+            ingredientCount: item.ingredientTwoCount,
             image: `/images/${item.imgTwo}.png`
         });
     } 
     if (item.ingredientThree) {
         ingredientList.push({
             ingredient: item.ingredientThree,
+            ingredientCount: item.ingredientThreeCount,
             image: `/images/${item.imgThree}.png`
         });
     } 

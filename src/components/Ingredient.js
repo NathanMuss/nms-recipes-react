@@ -6,7 +6,7 @@ const Ingredient = (props) => {
     return (
         <div className="center ingredient-card">
             <img src={props.item.image} alt={props.item.ingredient}/>
-            <p>{props.item.ingredient}</p>
+            <p>{props.item.ingredient}  {props.item.ingredientCount ? "x" + props.item.ingredientCount : "" }</p>
         </div>
     );
 }
