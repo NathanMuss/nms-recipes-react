@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 
 const Results = (props) => {
-    const results = handleResults(props.data);
+    const results = handleResults(props.data, props.filter);
     return (
         <main className="row result-container">
             {results}
@@ -14,10 +14,10 @@ const Results = (props) => {
     );
 }
 
-function handleResults(data) {
+function handleResults(data, filter) {
     const results = []
-    buildCraftedResults(data, results);
-    buildRefinedResults(data, results);
+    buildCraftedResults(data, results, filter);
+    buildRefinedResults(data, results, filter);
     if (!results.length) {
         results.push(
             <div className="center" key="noresults">
@@ -28,8 +28,8 @@ function handleResults(data) {
     return results;
 }
 
-function buildRefinedResults(data, arr) {
-      if (data.portable && data.portable.length) {
+function buildRefinedResults(data, arr, filter) {
+      if (filter.portable && data.portable && data.portable.length) {
         arr.push(
                 <div key="portable-refiner-banner" className="center container section-divider">
                     <h3>Portable Refiner Recipes</h3>
@@ -43,7 +43,7 @@ function buildRefinedResults(data, arr) {
         arr.push(portableResults);
     }
 
-    if (data.medium && data.medium.length) {
+    if (filter.medium && data.medium && data.medium.length) {
         arr.push(
             <div key="medium-refiner-banner" className="center container section-divider">
                 <h3>Medium Refiner Recipes</h3>
@@ -57,7 +57,7 @@ function buildRefinedResults(data, arr) {
         arr.push(mediumResults);
     }
 
-      if (data.large && data.large.length) {
+      if (filter.large && data.large && data.large.length) {
         arr.push(
             <div key="large-refiner-banner" className="center container section-divider">
                 <h3>Large Refiner Recipes</h3>
@@ -71,8 +71,8 @@ function buildRefinedResults(data, arr) {
         arr.push(largeResults);
     }
 }
-function buildCraftedResults(data, arr) {
-    if (data.crafted && data.crafted.length) {
+function buildCraftedResults(data, arr, filter) {
+    if (filter.crafted && data.crafted && data.crafted.length) {
         arr.push(
             <div key="crafted-banner" className="center container section-divider">
                 <h3>Crafting Recipes</h3>
@@ -90,7 +90,8 @@ function buildCraftedResults(data, arr) {
 function mapStateToProps(state) {
     return {
         query: state.query,
-        data: state.results
+        data: state.results,
+        filter: state.filter
     }
 }
 

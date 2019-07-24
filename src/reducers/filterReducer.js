@@ -19,6 +19,7 @@ export default (state = filter, action) => {
         } else {
             // Toggle single
             newState[action.payload.itemSet] = !newState[action.payload.itemSet];
+            newState.all = (newState.portable && newState.medium && newState.large && newState.crafted);            
         }
         return newState;
     }
