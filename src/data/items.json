@@ -3250,7 +3250,7 @@
         "result": "Nitrogen Salt x1"
       }
     ],
-    "crafted": [
+    "crafting": [
       {
         "value": "18,000,000",
         "imgOne": "quantum-processor",

@@ -72,13 +72,13 @@ function buildRefinedResults(data, arr, filter) {
     }
 }
 function buildCraftedResults(data, arr, filter) {
-    if (filter.crafted && data.crafted && data.crafted.length) {
+    if (filter.crafting && data.crafting && data.crafting.length) {
         arr.push(
             <div key="crafted-banner" className="center container section-divider">
                 <h3>Crafting Recipes</h3>
             </div>
         )
-        const craftedResults = data.crafted.map((curr, i) => {
+        const craftedResults = data.crafting.map((curr, i) => {
             return (
                 <CraftedResult item={curr} key={i} />
             )
