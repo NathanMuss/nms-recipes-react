@@ -125,11 +125,11 @@
 			"name": "Oxygen Decompression",
 			"time": "3:20",
 			"imgOne": "superoxide-crystal",
-			"ingredientOne": "Supero",
+			"ingredientOne": "Superoxide Crystal",
 			"result": "Oxygen",
 			"imgResult": "oxygen",
-			"resultCount": "ygen ",
-			"ingredientOneCount": "ide Crystal "
+			"resultCount": "",
+			"ingredientOneCount": ""
 		},
 		{
 			"name": "Di-hydrogen Cycling",
@@ -568,7 +568,7 @@
 			"ingredientOne": "Kelp Sac ",
 			"result": "Oxygen",
 			"imgResult": "oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientOneCount": "1"
 		},
 		{
@@ -1552,7 +1552,7 @@
 			"ingredientTwo": "Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
 		},
@@ -1630,7 +1630,7 @@
 			"ingredientTwo": "Condensed Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
 		},
@@ -2345,8 +2345,8 @@
 			"ingredientTwo": "Tritium ",
 			"textColorTwo": "#333",
 			"imgResult": "superoxide-crystal",
-			"result": "Supero",
-			"resultCount": "ide Crystal ",
+			"result": "Superoxide Crystal",
+			"resultCount": "",
 			"ingredientTwoCount": "50",
 			"ingredientOneCount": ""
 		},
@@ -2775,8 +2775,8 @@
 			"textColorThree": "#333",
 			"ingredientThree": "Tritium ",
 			"imgResult": "superoxide-crystal",
-			"result": "Supero",
-			"resultCount": "ide Crystal ",
+			"result": "Superoxide Crystal",
+			"resultCount": "",
 			"ingredientThreeCount": "50",
 			"ingredientTwoCount": "40",
 			"ingredientOneCount": ""
@@ -2792,7 +2792,7 @@
 			"ingredientThree": "Condensed Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientThreeCount": "1",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
@@ -2808,7 +2808,7 @@
 			"ingredientThree": "Condensed Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientThreeCount": "1",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
@@ -2824,7 +2824,7 @@
 			"ingredientThree": "Condensed Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientThreeCount": "1",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
@@ -2840,7 +2840,7 @@
 			"ingredientThree": "Condensed Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientThreeCount": "1",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
@@ -2856,7 +2856,7 @@
 			"ingredientThree": "Condensed Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientThreeCount": "1",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
@@ -2872,7 +2872,7 @@
 			"ingredientThree": "Condensed Carbon ",
 			"imgResult": "oxygen",
 			"result": "Oxygen",
-			"resultCount": "ygen ",
+			"resultCount": "",
 			"ingredientThreeCount": "1",
 			"ingredientTwoCount": "1",
 			"ingredientOneCount": "1"
