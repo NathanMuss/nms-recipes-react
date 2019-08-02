@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 const Switch = (props) => {
     return (
-        <div className="switch col m2 center">
+        <div className="switch col s2 m2 center">
             <p className="type-label blue-text darken-3">
                 {props.type}
             </p>
