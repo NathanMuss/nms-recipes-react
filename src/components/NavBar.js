@@ -37,7 +37,7 @@ class NavBar extends Component {
                         <div className="nav-wrapper">
                             <button className="btn waves-effect waves-light right reset" onClick={() => this.showAll()}>Show All</button>
                             <div className="row center">
-                                <div className="col s6 offset-m3 m6">
+                                <div className="col s8 offset-m3 m6">
                                     <form onSubmit={(e) => this.handleSearch(document.getElementById("query").value, e)}>
                                         <input onChange={() => {this.props.updateQuery(document.getElementById("query").value)}} type="text" placeholder="Condensed Carbon" className="center" id="query" value={this.props.query} />
                                     </form>
