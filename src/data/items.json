@@ -4406,7 +4406,8 @@
 			"imgResult": "magno-gold",
 			"result": "Magno-Gold",
 			"sub": "",
-			"ingredientOneCount": "50"
+			"ingredientOneCount": "50",
+			"ingredientTwoCount": "30"
 		},
 		{
 			"value": "150,000",

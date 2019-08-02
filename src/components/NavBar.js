@@ -4,7 +4,6 @@ import updateResults from '../actions/updateResults';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-
 class NavBar extends Component {
     handleSearch(query, e) {
         this.props.history.push(`/${query.toLowerCase()}`)
@@ -24,10 +23,9 @@ class NavBar extends Component {
     render() {
         return (
             <div>
-                <div className="navbar-fixed ">
+                <div className="navbar-fixed">
                     <nav className="white">
                         <div className="nav-wrapper">
-                            <div className="brand-logo blue-text darken-3 left">NMR</div>
                             <div className="row center">
                                 <div className="col offset-s3 s6 offset-m3 m6">
                                     <form onSubmit={(e) => this.handleSearch(document.getElementById("query").value, e)}>

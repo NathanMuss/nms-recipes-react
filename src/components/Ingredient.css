@@ -1,7 +1,8 @@
 .ingredient-card {
     color: black;
     margin-top: 10px;
-    border: 1px solid rgba(207,207,207,1);
+    border: 1px solid #4B4B4C;
+    background-color: #808080;
     border-radius: 8px;
     -webkit-box-shadow: 1px 1px 5px 0px rgba(207,207,207,0.5);
     -moz-box-shadow: 1px 1px 5px 0px rgba(207,207,207,0.5);
@@ -9,9 +10,9 @@
 }
 
 /* Uncomment below when cards are links to items */
-/* .ingredient-card:hover {
+.ingredient-card:hover {
     cursor: pointer;
-    -webkit-box-shadow: 3px 3px 8px 0px rgba(207,207,207,1);
-    -moz-box-shadow: 3px 3px 8px 0px rgba(207,207,207,1);
-    box-shadow: 3px 3px 8px 0px rgba(207,207,207,1);
-} */
+    -webkit-box-shadow: 3px 3px 8px 0px #4B4B4C;
+    -moz-box-shadow: 3px 3px 8px 0px #4B4B4C;
+    box-shadow: 3px 3px 8px 0px #4B4B4C;
+}

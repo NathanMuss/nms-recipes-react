@@ -8,15 +8,19 @@ import { bindActionCreators } from 'redux';
 
 
 
+
 class Ingredient extends Component {
     searchIngredient() {
-        this.props.updateQuery(this.props.item.ingredient.trim());
-        this.props.updateResults(this.props.item.ingredient.trim());
+        const ingredientName = this.props.item.ingredient.trim();
+        this.props.updateQuery(ingredientName);
+        this.props.updateResults(ingredientName);
+        
     }
-    render() {
+
+    render() {   
         return (
             <Link to={`/${this.props.item.ingredient}`} onClick={() => {this.searchIngredient()}}>
-                <div className="center ingredient-card">
+                <div className="ingredient-card">
                     <img src={this.props.item.image} alt={this.props.item.ingredient}/>
                     <p>{this.props.item.ingredient}  {this.props.item.ingredientCount ? "x" + this.props.item.ingredientCount : "" }</p>
                 </div>

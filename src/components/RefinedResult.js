@@ -9,8 +9,8 @@ const RefinedResult = (props) => {
                 <div className="result-details">
                     <h2>{props.item.result} {props.item.resultCount ? "x" + props.item.resultCount : ""}</h2>
                     <img src={`/images/${props.item.imgResult}.png`} alt={props.item.result}/>
-                    <p>Process name: {props.item.name}</p>
-                    <p>Time to process: {props.item.time}</p>
+                    <h4>Process name: {props.item.name}</h4>
+                    <h5>Time to process: {props.item.time}</h5>
                 </div>
                 <div className="result-recipes row">
                     <h3>Ingredients</h3>

@@ -9,7 +9,7 @@ const CraftedResult = (props) => {
                 <div className="result-details">
                     <h2>{props.item.result} {props.item.resultCount ? "x" + props.item.resultCount : ""}</h2>
                     <img src={`/images/${props.item.imgResult}.png`} alt={props.item.result}/>
-                    <p>Value: {props.item.value}</p>
+                    <h5>Value: {props.item.value}</h5>
                 </div>
                 <div className="result-recipes row">
                     <h3>Ingredients</h3>

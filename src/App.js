@@ -15,7 +15,7 @@ class App extends Component {
             <div className="App">
               <NavBar {...props} />
               <Filter />
-              <Results />
+              <Results {...props}/>
             </div>
           )
         }}/>

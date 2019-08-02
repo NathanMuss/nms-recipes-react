@@ -1,4 +1,7 @@
-export default (query) => {    
+export default (query, callback) => {
+    if (callback) {
+        callback()
+    }
     return {
         type: 'updateQuery',
         payload: {
