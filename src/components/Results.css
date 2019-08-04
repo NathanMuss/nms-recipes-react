@@ -29,3 +29,6 @@ img {
 .result-details {
     border-bottom: 2px solid #4B4B4C;
 }
+.no-results {
+    height: 100vh;
+}

@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Results.css';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import updateQuery from '../actions/updateQuery';
+import updateResults from '../actions/updateResults';
 import CraftedResult from './CraftedResult';
 import RefinedResult from './RefinedResult';
-import { connect } from 'react-redux';
 
 
-const Results = (props) => {
-    const results = handleResults(props.data, props.filter);
-    return (
-        <main className="row result-container">
-            {results}
-        </main>
-    );
+class Results extends Component {
+    
+    componentDidUpdate(prevProps) {
+        window.onpopstate  = (e) => {
+            let queryByPath = this.props.location.pathname.substr(1);
+            this.props.updateQuery(queryByPath);
+            this.props.updateResults(queryByPath);
+        }
+    }
+
+    render() {
+        const results = handleResults(this.props.data, this.props.filter);
+        return (
+            <main className="row result-container">
+                {results}
+            </main>
+        )
+    }
 }
 
 function handleResults(data, filter) {
@@ -20,8 +34,8 @@ function handleResults(data, filter) {
     buildRefinedResults(data, results, filter);
     if (!results.length) {
         results.push(
-            <div className="center" key="noresults">
-                <h3>Grah! No results</h3>
+            <div className="center no-results" key="noresults">
+                <h3 className="white-text">Grah! No results</h3>
             </div>
         )
     }
@@ -95,4 +109,11 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Results);
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({
+        updateQuery: updateQuery,
+        updateResults: updateResults,
+    }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Results);

@@ -14,7 +14,6 @@ class Ingredient extends Component {
         const ingredientName = this.props.item.ingredient.trim();
         this.props.updateQuery(ingredientName);
         this.props.updateResults(ingredientName);
-        
     }
 
     render() {   

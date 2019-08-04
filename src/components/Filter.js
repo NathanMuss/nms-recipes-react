@@ -13,7 +13,7 @@ const Filter = (props) => {
     
     return (
         <div className="row">
-            <div className="col s12 m6 switch-container">
+            <div className="col s12 m6 offset-m3 switch-container">
                 {switches}
             </div>
         </div>
