@@ -1,0 +1,10 @@
+/* @media (min-width: 320px) and (max-width: 480px) {
+    .switch-name {
+        font-size: 10px;
+        color: 'white';
+    }
+  } */
+
+  .switch label .lever {
+    margin: 0;
+}
