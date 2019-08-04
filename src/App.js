@@ -5,21 +5,24 @@ import NavBar from './components/NavBar';
 import Results from './components/Results';
 import Footer from './components/Footer';
 import Filter from './components/Filter';
+import ScrollToTop from './components/ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <Route path="/:query?" render={(props) => {
-          return (
-            <div className="App">
-              <NavBar {...props} />
-              <Filter />
-              <Results {...props}/>
-            </div>
-          )
-        }}/>
-        <Footer />
+        <ScrollToTop>
+          <Route path="/:query?" render={(props) => {
+            return (
+              <div className="App">
+                <NavBar {...props} />
+                <Filter />
+                <Results {...props}/>
+              </div>
+            )
+          }}/>
+          <Footer />
+        </ScrollToTop>
       </Router>
     );
   }
